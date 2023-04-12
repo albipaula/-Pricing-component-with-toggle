@@ -1,0 +1,60 @@
+$primary :linear-gradient( hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+$veryLightGrayishBlue:  hsl(240, 78%, 98%);
+$lightGrayishBlue: hsl(234, 14%, 74%);
+$grayishBlue: hsl(233, 13%, 49%);
+$darkGrayishBlue: hsl(232, 13%, 33%);
+
+@media only screen and (max-width: 768px) {
+    .title {
+    
+      font-size: 26px;
+      color: $grayishBlue;
+    }
+    
+  .price {
+
+font-size: 20px;
+
+
+  }
+      body {
+        background-image: url(/images/bg-top.svg);
+        background-position: 150% 0%;
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 30px;
+      }
+
+
+  .cardsContainer {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  
+  }
+
+
+  .card {
+
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 30px 0 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: no-wrap;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+}

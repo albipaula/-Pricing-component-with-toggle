@@ -1,0 +1,112 @@
+
+$primary :linear-gradient( hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+$veryLightGrayishBlue:  hsl(240, 78%, 98%);
+$lightGrayishBlue: hsl(234, 14%, 74%);
+$grayishBlue: hsl(233, 13%, 49%);
+$darkGrayishBlue: hsl(232, 13%, 33%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    text-align: center;
+    background:$veryLightGrayishBlue;
+    background-image: url("/images/bg-top.svg"),  url("/images/bg-bottom.svg");
+    background-repeat:no-repeat;
+    background-position: 200px 5px;
+    font-family: montserrat;
+    font-size: 15px;
+    font-weight: 700;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 150px;
+    margin-top:10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  
+    
+  }
+
+  .title {
+
+color: $grayishBlue;
+padding: 50px;
+
+  }
+  .price {
+    font-size: 48px;
+   
+  }  
+
+  .monthly {
+display: none;
+  }
+ 
+
+  
+.whiteCard {
+    background: #FFFFFF;
+
+    .price {
+        font-size: 64px;
+        color: $darkGrayishBlue;
+      }
+    h3{
+      color: $grayishBlue;
+      
+          }
+    
+  p{
+  color: $grayishBlue;
+  
+  }
+  button{
+  
+  background: $primary;
+  color: $veryLightGrayishBlue;
+  
+  }
+  
+    }
+  
+.violetCard {
+  
+      background: $primary;
+      color: $veryLightGrayishBlue;
+
+      .price {
+        font-size: 64px;
+        color: $veryLightGrayishBlue;
+      }    
+  
+  button { 
+    background: $veryLightGrayishBlue;
+    color: hsl(237, 63%, 64%);
+    
+  
+  }
+  
+    }
+  
+
+
+  hr {
+    background: $primary;
+    width: 250px;
+
+  
+  }
+
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .attribution a {
+    color: hsl(228deg, 45%, 44%);}

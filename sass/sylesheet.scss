@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: Linear Gradient hsl(236deg, 72%, 79%) to hsl(237deg, 63%, 64%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 700px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+  }
+  .toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .toggle p {
+    padding: 5px;
+    margin: 5px;
+  }
+  .cardsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 50vw;
+    height: 400px;
+    display: flex;
+    margin-top: 20px;
+    padding: 30px 0 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  button {
+    width: 230px;
+    background-color: linear-gradient(to bottom right, hsl(236deg, 72%, 79%) to hsl(237deg, 63%, 64%));
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(246, 241, 241, 0.2) 0px 2px 8px 0px;
+  }
+}
+.violet {
+  color: white;
+  background-color: hsl(234deg, 14%, 74%);
+}
+
+.switch {
+  --button-width: 3.5em;
+  --button-height: 2em;
+  --toggle-diameter: 1.5em;
+  --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+  --toggle-shadow-offset: 10px;
+  --toggle-wider: 3em;
+  --color-grey: #cccccc;
+  --color-green: #9368d999;
+}
+
+.slider {
+  display: inline-block;
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--color-grey);
+  border-radius: calc(var(--button-height) / 2);
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+  content: "";
+  display: inline-block;
+  width: var(--toggle-diameter);
+  height: var(--toggle-diameter);
+  background-color: #fff;
+  border-radius: calc(var(--toggle-diameter) / 2);
+  position: absolute;
+  top: var(--button-toggle-offset);
+  transform: translateX(var(--button-toggle-offset));
+  box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+  transition: 0.3s all ease-in-out;
+}
+
+.switch input[type=checkbox]:checked + .slider {
+  background-color: var(--color-green);
+}
+
+.switch input[type=checkbox]:checked + .slider::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type=checkbox] {
+  display: none;
+}
+
+.switch input[type=checkbox]:active + .slider::after {
+  width: var(--toggle-wider);
+}
+
+.switch input[type=checkbox]:checked:active + .slider::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
+
+/*# sourceMappingURL=sylesheet.scss.map */

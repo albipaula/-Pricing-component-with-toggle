@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@300&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <title>Frontend Mentor | [ Pricing component with toggle]</title>
+
+
+</head>
+<body>
+<header>
+  <h1 class="title"> Our Pricing</h1>
+</header>
+<section class="toggle">
+  <p>Annually</p>
+  <label for= "myCheck" class="switch">
+    <input type="checkbox" id="myCheck" onclick="myFunction()">
+    <span class="slider round"></span>
+  </label>
+<p>  Monthly</p>
+</section>
+ <section class="cardsContainer"> 
+  <div class="whiteCard card">
+  <h3>Basic</h3>
+  <h5 class=" price monthly" id="monthly">&dollar;19.99</h5> 
+  <h5 class=" price anually" id="anually">&dollar;199.99</h5> 
+  <hr>
+  <p>500 GB Storage</p>
+  <hr>
+  <p>  2 Users Allowed</p>
+  <hr>
+  <p> Send up to 3 GB</p>
+  <hr>
+  <button class="btn"> LEARN MORE</button>
+</div>
+
+<div class="violetCard card">
+<h3>Professional</h3>
+<p class=" price monthly" id="monthly">&dollar;24.99</p>
+<p class=" price anually" id="anually">&dollar;249.99</p>
+<hr>
+<p>  1 TB Storage </p>
+<hr>
+<p>  5 Users Allowed </p>
+<hr>
+<p>  Send up to 10 GB </p>
+<hr>
+
+ <button class="btn"> LEARN MORE </button>
+</div>
+
+<div class="whiteCard card">
+<h3> Master</h3>
+<h5 class=" price monthly" id="monthly">  &dollar;39.99</h5>
+<h5 class=" price anually" id="anually">  &dollar;399.99</h5>
+<hr>
+<p>  2 TB Storage</p>
+<hr>
+<p>10 Users Allowed</p>
+<hr>
+<p>  Send up to 20 GB</p>
+<hr>
+ <button class="btn"> LEARN MORE</button>
+</div> 
+
+</section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Paula Albi</a>.
+  </div>
+
+
+  <script>
+    function myFunction() {
+      let checkBox = document.getElementById("myCheck");
+      let month = document.getElementById("monthly");
+      let anual = document.getElementById("anually");
+      if (checkBox.checked == true){
+        month.style.display = "block";
+        anual.style.display = "none";
+      } else {
+         anual.style.display = "block";
+         month.style.display = "none";
+      }
+    }
+    </script>
+
+</body>
+</html>
