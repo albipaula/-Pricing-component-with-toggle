@@ -43,7 +43,7 @@ padding: 50px;
    
   }  
 
-  .monthly {
+  .hidden {
 display: none;
   }
  
@@ -83,13 +83,7 @@ display: none;
         font-size: 64px;
         color: $veryLightGrayishBlue;
       }    
-  
-  button { 
-    background: $veryLightGrayishBlue;
-    color: hsl(237, 63%, 64%);
-    
-  
-  }
+
   
     }
   

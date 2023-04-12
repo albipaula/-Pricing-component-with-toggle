@@ -19,7 +19,7 @@
 <section class="toggle">
   <p>Annually</p>
   <label for= "myCheck" class="switch">
-    <input type="checkbox" id="myCheck" onclick="myFunction()">
+    <input type="checkbox" id="myCheck" class="toggle1">
     <span class="slider round"></span>
   </label>
 <p>  Monthly</p>
@@ -27,7 +27,7 @@
  <section class="cardsContainer"> 
   <div class="whiteCard card">
   <h3>Basic</h3>
-  <h5 class=" price monthly" id="monthly">&dollar;19.99</h5> 
+  <h5 class=" price monthly hidden" id="monthly">&dollar;19.99</h5> 
   <h5 class=" price anually" id="anually">&dollar;199.99</h5> 
   <hr>
   <p>500 GB Storage</p>
@@ -41,7 +41,7 @@
 
 <div class="violetCard card">
 <h3>Professional</h3>
-<p class=" price monthly" id="monthly">&dollar;24.99</p>
+<p class=" price monthly hidden" id="monthly">&dollar;24.99</p>
 <p class=" price anually" id="anually">&dollar;249.99</p>
 <hr>
 <p>  1 TB Storage </p>
@@ -51,12 +51,12 @@
 <p>  Send up to 10 GB </p>
 <hr>
 
- <button class="btn"> LEARN MORE </button>
+ <button class="btn btn-violet"> LEARN MORE </button>
 </div>
 
 <div class="whiteCard card">
 <h3> Master</h3>
-<h5 class=" price monthly" id="monthly">  &dollar;39.99</h5>
+<h5 class=" price monthly hidden" id="monthly">  &dollar;39.99</h5>
 <h5 class=" price anually" id="anually">  &dollar;399.99</h5>
 <hr>
 <p>  2 TB Storage</p>
@@ -72,23 +72,26 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Paula Albi</a>.
+    Coded by <a href="https://github.com/albipaula">Paula Albi</a>.
   </div>
 
 
   <script>
-    function myFunction() {
-      let checkBox = document.getElementById("myCheck");
-      let month = document.getElementById("monthly");
-      let anual = document.getElementById("anually");
-      if (checkBox.checked == true){
-        month.style.display = "block";
-        anual.style.display = "none";
-      } else {
-         anual.style.display = "block";
-         month.style.display = "none";
-      }
-    }
+
+
+const checkbox = document.querySelector('.toggle1');
+const priceMonth = document.querySelectorAll('.monthly');
+const priceYear = document.querySelectorAll('.anually');
+checkbox.addEventListener('change', () => {
+  if (checkbox.checked) {
+      priceYear.forEach(price => price.classList.add('hidden'));
+      priceMonth.forEach(price => price.classList.remove('hidden'));
+  } else {
+      priceYear.forEach(price => price.classList.remove('hidden'));
+      priceMonth.forEach(price => price.classList.add('hidden'));
+  }
+});
+
     </script>
 
 </body>

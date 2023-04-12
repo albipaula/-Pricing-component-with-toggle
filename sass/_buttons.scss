@@ -1,3 +1,8 @@
+$primary :linear-gradient( hsl(236, 72%, 79%) ,hsl(237, 63%, 64%));
+$veryLightGrayishBlue:  hsl(240, 78%, 98%);
+$lightGrayishBlue: hsl(234, 14%, 74%);
+$grayishBlue: hsl(233, 13%, 49%);
+$darkGrayishBlue: hsl(232, 13%, 33%);
 .btn {
     width: 250px;
     font-weight: 700;
@@ -5,4 +10,34 @@
     border: 1px solid rgba(255, 255, 255, 0.48);
     border-radius: 8px;
     margin-top: 10px;
+
+&:hover { 
+
+cursor: pointer;
+background:$veryLightGrayishBlue ;
+color: $grayishBlue;
+border: 2px solid $darkGrayishBlue;
+
+
+
+}
+
+
+
+  }
+  
+  .violetCard button { 
+    background: $veryLightGrayishBlue;
+    color: hsl(237, 63%, 64%);
+    
+    &:hover { 
+  
+      cursor: pointer;
+      background:$primary ;
+      color: $veryLightGrayishBlue;
+      border: 2px solid $darkGrayishBlue;
+      
+      
+      
+      }
   }

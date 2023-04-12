@@ -32,7 +32,7 @@ body {
   font-size: 48px;
 }
 
-.monthly {
+.hidden {
   display: none;
 }
 
@@ -61,10 +61,6 @@ body {
 .violetCard .price {
   font-size: 64px;
   color: hsl(240deg, 78%, 98%);
-}
-.violetCard button {
-  background: hsl(240deg, 78%, 98%);
-  color: hsl(237deg, 63%, 64%);
 }
 
 hr {
@@ -242,6 +238,23 @@ input:checked + .slider:before {
   border: 1px solid rgba(255, 255, 255, 0.48);
   border-radius: 8px;
   margin-top: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: hsl(240deg, 78%, 98%);
+  color: hsl(233deg, 13%, 49%);
+  border: 2px solid hsl(232deg, 13%, 33%);
+}
+
+.violetCard button {
+  background: hsl(240deg, 78%, 98%);
+  color: hsl(237deg, 63%, 64%);
+}
+.violetCard button:hover {
+  cursor: pointer;
+  background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: hsl(240deg, 78%, 98%);
+  border: 2px solid hsl(232deg, 13%, 33%);
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
