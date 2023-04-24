@@ -14,13 +14,14 @@ $darkGrayishBlue: hsl(232, 13%, 33%);
   body {
     text-align: center;
     background:$veryLightGrayishBlue;
-    background-image: url("/images/bg-top.svg"),  url("/images/bg-bottom.svg");
+    background-image: url("./images/bg-top.svg"),  url("./images/bg-bottom.svg");
     background-repeat:no-repeat;
     background-position: 200px 5px;
     font-family: montserrat;
     font-size: 15px;
     font-weight: 700;
     display: grid;
+    grid-template-columns: auto;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -32,6 +33,7 @@ $darkGrayishBlue: hsl(232, 13%, 33%);
     
   }
 
+  .displayFlex { flex-direction: column; width: 100% ;justify-content: center;}
   .title {
 
 color: $grayishBlue;
