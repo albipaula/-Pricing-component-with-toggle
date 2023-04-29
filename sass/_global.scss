@@ -12,7 +12,7 @@ $darkGrayishBlue: hsl(232, 13%, 33%);
   }
   
   body {
-    text-align: center;
+  
     background:$veryLightGrayishBlue;
     background-image: url("./images/bg-top.svg"),  url("./images/bg-bottom.svg");
     background-repeat:no-repeat;
@@ -20,35 +20,34 @@ $darkGrayishBlue: hsl(232, 13%, 33%);
     font-family: montserrat;
     font-size: 15px;
     font-weight: 700;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-   
-    margin-top:10px;
     overflow-x: hidden;
     scroll-behavior: smooth;
   
     
   }
+ 
+.displayFlex { 
+  flex-direction: column; 
+  width: 100% ;
+  justify-content: center;
+}
 
-  .displayFlex { flex-direction: column; width: 100% ;justify-content: center;}
-  .title {
-
+header {
+  margin-top: 25px;
+  padding: 5px;
+grid-area: header;
+text-align: center;
 color: $grayishBlue;
-padding: 50px;
-
-  }
-  .price {
-    font-size: 48px;
-   
+}
+  
+.price {
+    font-size: 48px;   
   }  
 
-  .hidden {
-display: none;
+.hidden {
+  display: none;
   }
- 
+
 
   
 .whiteCard {
@@ -74,7 +73,7 @@ display: none;
   
   }
   
-    }
+}
   
 .violetCard {
   
@@ -87,22 +86,27 @@ display: none;
       }    
 
   
-    }
+}
   
 
 
   hr {
     background: $primary;
     width: 250px;
+    color: grey;
 
   
   }
 
 
-  .attribution {
+.attribution {
+    width: 100%;
+    height: auto;
     font-size: 11px;
     text-align: center;
-  }
+    margin-top: -5%;
+
   
   .attribution a {
-    color: hsl(228deg, 45%, 44%);}
+    color: hsl(228deg, 45%, 44%);} 
+}

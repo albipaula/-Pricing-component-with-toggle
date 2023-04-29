@@ -1,9 +1,11 @@
 .toggle {
+  grid-area: toggle;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin-bottom: -25px;
+    padding: 5px;
+   
   }
   .toggle p {
     padding: 5px;
