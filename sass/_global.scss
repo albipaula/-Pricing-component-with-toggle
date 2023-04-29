@@ -22,55 +22,56 @@ $darkGrayishBlue: hsl(232, 13%, 33%);
     font-weight: 700;
     overflow-x: hidden;
     scroll-behavior: smooth;
-  
-    
-  }
- 
-.displayFlex { 
+
+}
+
+
+/* .displayFlex { 
   flex-direction: column; 
   width: 100% ;
   justify-content: center;
 }
+ */
 
+
+ 
 header {
   margin-top: 25px;
-  padding: 5px;
-grid-area: header;
-text-align: center;
-color: $grayishBlue;
+  padding: 15px;
+  grid-area: header;
+  text-align: center;
+  color: $grayishBlue;
 }
   
 .price {
-    font-size: 48px;   
-  }  
+  font-size: 48px;   
+}  
 
 .hidden {
   display: none;
-  }
+}
 
 
   
 .whiteCard {
-    background: #FFFFFF;
+  background: #FFFFFF;
 
     .price {
         font-size: 64px;
         color: $darkGrayishBlue;
       }
+
     h3{
       color: $grayishBlue;
-      
           }
     
-  p{
-  color: $grayishBlue;
-  
+    p{
+      color: $grayishBlue;
   }
+
   button{
-  
-  background: $primary;
-  color: $veryLightGrayishBlue;
-  
+    background: $primary;
+    color: $veryLightGrayishBlue;
   }
   
 }

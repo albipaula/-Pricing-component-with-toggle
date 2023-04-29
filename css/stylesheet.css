@@ -16,15 +16,15 @@ body {
   scroll-behavior: smooth;
 }
 
-.displayFlex {
-  flex-direction: column;
-  width: 100%;
+/* .displayFlex { 
+  flex-direction: column; 
+  width: 100% ;
   justify-content: center;
 }
-
+ */
 header {
   margin-top: 25px;
-  padding: 5px;
+  padding: 15px;
   grid-area: header;
   text-align: center;
   color: hsl(233deg, 13%, 49%);
@@ -121,7 +121,6 @@ hr {
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 26px;
-    color: hsl(233deg, 13%, 49%);
   }
   .price {
     font-size: 20px;
@@ -159,12 +158,11 @@ hr {
   }
 }
 .toggle {
-  grid-area: toggle;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  padding: 5px;
+  padding: px;
 }
 
 .toggle p {
